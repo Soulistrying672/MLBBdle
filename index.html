@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MLBBDLE - Guess the Hero</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container">
+    <button id="theme-toggle">Switch Theme</button>
+    <h1>MLBBDLE</h1>
+    <h2>Guess the Daily Mobile Legends: Bang Bang Hero!</h2>
+
+    <!-- We'll NOT use <datalist>, we'll create our own dropdown for icons. -->
+    <div class="autocomplete-container">
+      <input
+        type="text"
+        id="guess-input"
+        placeholder="Enter hero name..."
+        autocomplete="off"
+      />
+      <ul id="autocomplete-list" class="autocomplete-items"></ul>
+    </div>
+
+    <button id="guess-button">Guess</button>
+
+    <p id="result"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Hero</th>
+          <th>Role</th>
+          <th>Species</th>
+          <th>Resource</th>
+          <th>Range</th>
+          <th>Region</th>
+          <th>Lane</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody id="guesses-table"></tbody>
+    </table>
+
+    <div id="hero-image-container"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
